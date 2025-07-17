@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { siteData } from '@/data/site-data';
 
 export const metadata: Metadata = {
@@ -61,17 +62,23 @@ export default function About() {
             </div>
             
             <div className="space-y-6">
-              <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🧹</div>
-                  <p className="text-gray-600">Professional Cleaning Team</p>
-                </div>
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+                <Image
+                  src="/images/about-img-3.jpg"
+                  alt="Professional Cleaning Team"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">✨</div>
-                  <p className="text-gray-600">Spotless Results</p>
-                </div>
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+                <Image
+                  src="/images/about-img-4.jpg"
+                  alt="Quality Cleaning Results"
+                  width={600}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

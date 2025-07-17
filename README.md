@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Copious Cleaning Services Website
+
+A modern, responsive website for Copious Cleaning Services built with Next.js 15, TypeScript, and Tailwind CSS. This site was migrated from WordPress to provide better performance, SEO, and maintainability.
+
+## Features
+
+- **Modern Tech Stack**: Next.js 15 with App Router, TypeScript, and Tailwind CSS
+- **Responsive Design**: Mobile-first approach with beautiful UI
+- **SEO Optimized**: Proper metadata, OpenGraph, and Twitter cards
+- **Performance**: Static generation for optimal loading speeds
+- **Easy Deployment**: Ready for Vercel, Netlify, or GitHub Pages
+
+## Pages
+
+- **Home**: Hero section, about preview, services overview, testimonials, and contact map
+- **About**: Company story, values, and team information
+- **Services**: Detailed service descriptions with individual pages
+- **Contact**: Contact form, business hours, and location map
+
+## Services Offered
+
+- Domestic Cleaning
+- Office Cleaning
+- Airbnb Cleaning
+- AfterParty Cleaning
+- End of Tenancy Cleaning
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/copious-cleaning-site.git
+cd copious-cleaning-site
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Deployment Options
 
-To learn more about Next.js, take a look at the following resources:
+### Vercel (Recommended)
+1. Push code to GitHub
+2. Connect repository to Vercel
+3. Deploy automatically
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Netlify
+1. Push code to GitHub
+2. Connect repository to Netlify
+3. Build command: `npm run build`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### GitHub Pages
+1. Add static export configuration to `next.config.js`
+2. Build and deploy the `out` folder
 
-## Deploy on Vercel
+## Next Steps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Create GitHub Repository**: Upload your code to GitHub
+2. **Choose Deployment Platform**: Vercel, Netlify, or GitHub Pages
+3. **Configure Custom Domain**: Point copiouscleaning.co.uk to your deployment
+4. **Add Images**: Upload actual service photos to `/public/images/`
+5. **Test Contact Form**: Set up form handling (Netlify Forms, Formspree, etc.)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Migration Complete! 🎉
+
+Your WordPress site has been successfully converted to a modern Next.js application with:
+- All content migrated
+- Responsive design
+- SEO optimization
+- Fast loading times
+- Easy maintenance
+
+---
+
+Built with ❤️ using Next.js and TypeScript

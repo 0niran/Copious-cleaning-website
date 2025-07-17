@@ -72,12 +72,24 @@ export const siteData = {
   ],
 
   gallery: [
-    { id: 1, alt: "Cleaning service image 1", src: "/images/gallery/img-1.png" },
-    { id: 2, alt: "Cleaning service image 2", src: "/images/gallery/img-2.png" },
-    { id: 3, alt: "Cleaning service image 3", src: "/images/gallery/img-3.png" },
-    { id: 4, alt: "Cleaning service image 4", src: "/images/gallery/img-4.png" },
-    { id: 5, alt: "Cleaning service image 5", src: "/images/gallery/img-5.png" },
-    { id: 6, alt: "Cleaning service image 6", src: "/images/gallery/img-6.png" }
+    { id: 1, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20231001-WA0010.png" },
+    { id: 2, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20231001-WA0008.png" },
+    { id: 3, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20230915-WA0020.png" },
+    { id: 4, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20230915-WA0007.png" },
+    { id: 5, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20230915-WA0006.png" },
+    { id: 6, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20221028-WA0009.png" },
+    { id: 7, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20221028-WA0007.png" },
+    { id: 8, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20191118-WA0004.png" },
+    { id: 9, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20191118-WA0005.png" },
+    { id: 10, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20191118-WA0010.png" },
+    { id: 11, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20200212-WA0003.png" },
+    { id: 12, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20221028-WA0006.png" },
+    { id: 13, alt: "Professional cleaning work example", src: "/images/gallery/IMG-20191117-WA0006.png" },
+    { id: 14, alt: "Professional cleaning work example", src: "/images/gallery/20220618_160558-min.png" },
+    { id: 15, alt: "Professional cleaning work example", src: "/images/gallery/20220618_122639-min.png" },
+    { id: 16, alt: "Professional cleaning work example", src: "/images/gallery/20220618_104405.png" },
+    { id: 17, alt: "Professional cleaning work example", src: "/images/gallery/20220528_153435-min.png" },
+    { id: 18, alt: "Professional cleaning work example", src: "/images/gallery/20220127_124744.png" }
   ],
 
   contact: {

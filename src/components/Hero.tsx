@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { siteData } from '@/data/site-data';
 
 export default function Hero() {
@@ -30,15 +31,16 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Image Placeholder */}
+          {/* Hero Image */}
           <div className="relative">
-            <div className="aspect-video bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-24 h-24 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-4xl">🏠</span>
-                </div>
-                <p className="text-blue-100">Professional Cleaning Services</p>
-              </div>
+            <div className="aspect-video bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden">
+              <Image
+                src="/images/banner-img-1.jpg"
+                alt="Professional Cleaning Services"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import Testimonials from '@/components/Testimonials';
+import Image from 'next/image';
+import Link from 'next/link';
 import { siteData } from '@/data/site-data';
 
 export default function Home() {
@@ -38,11 +40,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gray-100 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🧹</div>
-                  <p className="text-gray-600">Professional Cleaning Team</p>
-                </div>
+              <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
+                <Image
+                  src="/images/about-img-1.jpg"
+                  alt="Professional Cleaning Team"
+                  width={600}
+                  height={600}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -50,6 +55,50 @@ export default function Home() {
       </section>
 
       <Services />
+      
+      {/* Gallery Preview Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Work Gallery
+            </h2>
+            <p className="text-xl text-gray-600">
+              See examples of our professional cleaning work and quality results
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {siteData.gallery.slice(0, 6).map((image) => (
+              <div
+                key={image.id}
+                className="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow group"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={300}
+                  height={300}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link
+              href="/gallery"
+              className="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+            >
+              View Full Gallery
+              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Testimonials />
 
       {/* Map Section */}
