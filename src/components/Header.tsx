@@ -25,9 +25,9 @@ export default function Header() {
             <Image
               src="/images/logo.svg"
               alt="Copious Cleaning"
-              width={200}
-              height={50}
-              className="h-8 w-auto"
+              width={280}
+              height={60}
+              className="h-12 w-auto"
             />
           </Link>
 
@@ -37,7 +37,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="nav-link"
               >
                 {item.name}
               </Link>
@@ -48,7 +48,7 @@ export default function Header() {
           <div className="hidden md:block">
             <Link
               href="/contact"
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+              className="btn-primary"
             >
               Get Quote
             </Link>

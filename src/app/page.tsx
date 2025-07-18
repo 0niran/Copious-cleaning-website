@@ -25,17 +25,17 @@ export default function Home() {
                 {siteData.about.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
-                  <div className="text-gray-600">Years Experience</div>
+                <div className="text-center bg-[#deebfe] p-6 rounded-lg">
+                  <div className="stats-counter">5+</div>
+                  <div className="text-gray-600 font-medium">Years Experience</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
-                  <div className="text-gray-600">Happy Customers</div>
+                <div className="text-center bg-[#deebfe] p-6 rounded-lg">
+                  <div className="stats-counter">100+</div>
+                  <div className="text-gray-600 font-medium">Happy Customers</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
-                  <div className="text-gray-600">Jobs Completed</div>
+                <div className="text-center bg-[#deebfe] p-6 rounded-lg">
+                  <div className="stats-counter">500+</div>
+                  <div className="text-gray-600 font-medium">Jobs Completed</div>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@ export default function Home() {
             {siteData.gallery.slice(0, 6).map((image) => (
               <div
                 key={image.id}
-                className="aspect-square bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow group"
+                className="gallery-item aspect-square bg-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-shadow group"
               >
                 <Image
                   src={image.src}
@@ -88,7 +88,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link
               href="/gallery"
-              className="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              className="btn-primary inline-flex items-center"
             >
               View Full Gallery
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

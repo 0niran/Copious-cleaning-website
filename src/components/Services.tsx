@@ -27,31 +27,33 @@ export default function Services() {
           {siteData.services.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow"
+              className="service-card group"
             >
-              <div className="text-4xl mb-4">
+              <div className="text-5xl mb-6 text-center group-hover:scale-110 transition-transform">
                 {serviceIcons[service.id as keyof typeof serviceIcons]}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">
                 <Link
                   href={`/services/${service.slug}`}
-                  className="hover:text-blue-600 transition-colors"
+                  className="hover:text-primary transition-colors"
                 >
                   {service.title}
                 </Link>
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-6 text-center leading-relaxed">
                 {service.description}
               </p>
-              <Link
-                href={`/services/${service.slug}`}
-                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
-              >
-                Learn More
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+              <div className="text-center">
+                <Link
+                  href={`/services/${service.slug}`}
+                  className="inline-flex items-center text-primary hover:text-secondary font-semibold"
+                >
+                  Learn More
+                  <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           ))}
         </div>
