@@ -93,7 +93,7 @@ export const siteData = {
   ],
 
   contact: {
-    phone: "+44 20 XXXX XXXX",
+    phone: "+44-797-055-2856",
     email: "info@copiouscleaning.co.uk",
     address: "London, United Kingdom"
   }

@@ -44,9 +44,11 @@ export default function Home() {
                 <Image
                   src="/images/about-img-1.jpg"
                   alt="Professional Cleaning Team"
-                  width={600}
-                  height={600}
+                  width={800}
+                  height={800}
                   className="w-full h-full object-cover"
+                  quality={95}
+                  priority
                 />
               </div>
             </div>
@@ -77,9 +79,10 @@ export default function Home() {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  width={300}
-                  height={300}
+                  width={400}
+                  height={400}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  quality={90}
                 />
               </div>
             ))}

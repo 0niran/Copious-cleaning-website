@@ -66,18 +66,20 @@ export default function About() {
                 <Image
                   src="/images/about-img-3.jpg"
                   alt="Professional Cleaning Team"
-                  width={600}
-                  height={400}
+                  width={800}
+                  height={533}
                   className="w-full h-full object-cover"
+                  quality={95}
                 />
               </div>
               <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
                 <Image
                   src="/images/about-img-4.jpg"
                   alt="Quality Cleaning Results"
-                  width={600}
-                  height={400}
+                  width={800}
+                  height={533}
                   className="w-full h-full object-cover"
+                  quality={95}
                 />
               </div>
             </div>

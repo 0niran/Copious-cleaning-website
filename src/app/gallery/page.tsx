@@ -47,7 +47,9 @@ export default function Gallery() {
                     src={image.src}
                     alt={image.alt}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    quality={90}
                   />
                 </div>
                 <div className="p-4">
