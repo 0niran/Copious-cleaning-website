@@ -3,8 +3,25 @@ import Link from 'next/link';
 import { siteData } from '@/data/site-data';
 
 export const metadata: Metadata = {
-  title: 'Services',
-  description: 'Professional cleaning services including domestic, office, Airbnb, and specialized cleaning in London.',
+  title: 'Professional Cleaning Services in London | Copious Cleaning Services',
+  description: 'Comprehensive cleaning services in London: domestic house cleaning, office cleaning, Airbnb cleaning, end of tenancy, and after-party cleaning. Professional, reliable, and affordable.',
+  keywords: [
+    'cleaning services london',
+    'domestic cleaning',
+    'office cleaning london',
+    'airbnb cleaning services',
+    'end of tenancy cleaning',
+    'after party cleaning',
+    'commercial cleaning',
+    'house cleaning services london',
+    'professional cleaners'
+  ],
+  openGraph: {
+    title: 'Professional Cleaning Services in London | Copious Cleaning Services',
+    description: 'Comprehensive cleaning services in London: domestic, office, Airbnb, end of tenancy, and specialized cleaning.',
+    url: 'https://copiouscleaning.co.uk/services',
+    type: 'website',
+  },
 };
 
 export default function Services() {

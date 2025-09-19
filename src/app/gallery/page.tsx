@@ -3,8 +3,22 @@ import Image from 'next/image';
 import { siteData } from '@/data/site-data';
 
 export const metadata: Metadata = {
-  title: 'Gallery',
-  description: 'View examples of our professional cleaning work and completed projects.',
+  title: 'Gallery - Professional Cleaning Work Examples | Copious Cleaning Services',
+  description: 'View our professional cleaning work gallery. See before and after photos of our domestic cleaning, office cleaning, and specialized cleaning projects in London.',
+  keywords: [
+    'cleaning work gallery',
+    'professional cleaning examples',
+    'before after cleaning photos',
+    'cleaning company portfolio',
+    'london cleaning work',
+    'cleaning service examples'
+  ],
+  openGraph: {
+    title: 'Gallery - Professional Cleaning Work Examples | Copious Cleaning Services',
+    description: 'View our professional cleaning work gallery with before and after photos of our cleaning projects.',
+    url: 'https://copiouscleaning.co.uk/gallery',
+    type: 'website',
+  },
 };
 
 export default function Gallery() {

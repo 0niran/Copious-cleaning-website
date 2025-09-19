@@ -3,8 +3,22 @@ import Image from 'next/image';
 import { siteData } from '@/data/site-data';
 
 export const metadata: Metadata = {
-  title: 'About Us',
-  description: siteData.about.description,
+  title: 'About Us - Professional Cleaning Company | Copious Cleaning Services',
+  description: 'Learn about Copious Cleaning Services - London\'s trusted professional cleaning company. We\'re committed to excellence with reliable, honest, and highly motivated cleaners who don\'t cut corners.',
+  keywords: [
+    'about copious cleaning',
+    'professional cleaning company london',
+    'reliable cleaners',
+    'cleaning company history',
+    'trusted cleaning services',
+    'london cleaning professionals'
+  ],
+  openGraph: {
+    title: 'About Us - Professional Cleaning Company | Copious Cleaning Services',
+    description: 'Learn about Copious Cleaning Services - London\'s trusted professional cleaning company with reliable, professional cleaners.',
+    url: 'https://copiouscleaning.co.uk/about',
+    type: 'website',
+  },
 };
 
 export default function About() {

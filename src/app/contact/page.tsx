@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { siteData } from '@/data/site-data';
 
+// Note: Metadata is handled in layout.tsx since this is a client component
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',

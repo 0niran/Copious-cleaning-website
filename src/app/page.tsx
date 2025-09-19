@@ -1,13 +1,37 @@
+import { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import Testimonials from '@/components/Testimonials';
+import StructuredData from '@/components/StructuredData';
 import Image from 'next/image';
 import Link from 'next/link';
 import { siteData } from '@/data/site-data';
 
+export const metadata: Metadata = {
+  title: 'Professional Cleaning Services in London | Copious Cleaning Services',
+  description: 'Transform your space with Copious Cleaning Services - London\'s trusted professional cleaning company. Domestic, office, Airbnb, and end of tenancy cleaning. Book your free quote today!',
+  keywords: [
+    'professional cleaning services london',
+    'domestic cleaning london',
+    'office cleaning services',
+    'cleaning company london',
+    'house cleaning services',
+    'reliable cleaners london',
+    'affordable cleaning services',
+    'best cleaning company london'
+  ],
+  openGraph: {
+    title: 'Professional Cleaning Services in London | Copious Cleaning Services',
+    description: 'Transform your space with Copious Cleaning Services - London\'s trusted professional cleaning company. Book your free quote today!',
+    url: 'https://copiouscleaning.co.uk',
+    type: 'website',
+  },
+};
+
 export default function Home() {
   return (
     <>
+      <StructuredData type="webpage" pageTitle="Professional Cleaning Services in London" pageDescription="Transform your space with Copious Cleaning Services - London's trusted professional cleaning company." />
       <Hero />
       
       {/* About Section */}

@@ -18,9 +18,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const serviceKeywords = {
+    'domestic-cleaning': ['domestic cleaning london', 'house cleaning', 'home cleaning services', 'residential cleaning'],
+    'office-cleaning': ['office cleaning london', 'commercial cleaning', 'workplace cleaning', 'business cleaning'],
+    'airbnb-cleaning-service': ['airbnb cleaning', 'holiday rental cleaning', 'short term rental cleaning', 'property turnaround'],
+    'afterparty-cleaning': ['after party cleaning', 'event cleaning', 'post party cleanup', 'celebration cleaning'],
+    'end-of-tenancy-cleaning': ['end of tenancy cleaning', 'move out cleaning', 'rental property cleaning', 'deposit cleaning']
+  };
+
   return {
-    title: service.title,
-    description: service.description,
+    title: `${service.title} in London | Copious Cleaning Services`,
+    description: `Professional ${service.title.toLowerCase()} services in London. ${service.description} Book your free quote today with Copious Cleaning Services.`,
+    keywords: [
+      ...(serviceKeywords[slug as keyof typeof serviceKeywords] || []),
+      'professional cleaning london',
+      'reliable cleaners',
+      'cleaning company london'
+    ],
+    openGraph: {
+      title: `${service.title} in London | Copious Cleaning Services`,
+      description: `Professional ${service.title.toLowerCase()} services in London. Book your free quote today.`,
+      url: `https://copiouscleaning.co.uk/services/${slug}`,
+      type: 'website',
+    },
   };
 }
 
